@@ -1,0 +1,257 @@
+*{
+    font-family: Raleway;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1340px;
+    margin: auto;
+}
+
+h1{
+    font-size:24px;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+h3 {font-size:  16px;
+    font-weight:  400;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.toplinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.items{
+    text-align: center;
+    padding: 20%;
+    flex-basis: 100px;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: blue;
+    border-top:   2px solid blue;  
+    padding-top: 30px;
+}
+
+.filterbox{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 66%;
+    font-size: 18px;
+    font-weight: 700;
+    align-items: center;
+}
+
+.filters{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.filtericon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0065FC;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    background-color:  #DEEBFF;
+    border-radius:30px;
+    margin-right:  -45px;
+    z-index: 1;
+}
+
+
+
+.filtername{
+    border: 2px solid #dfdfdf;
+    border-radius: 30px;
+    padding:13px;
+    padding-left: 60px;
+    padding-right: 20px;
+}
+
+.accomodation{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    height: 625px;
+}
+
+.accobox {
+    background-color: #F2F2F2;
+    width:65.666%;
+    border-radius: 20px;
+    padding: 20px 40px;
+    
+}
+
+
+.allrooms{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 20px;
+    
+
+}
+.cards {
+    display: flex;
+    flex-direction:column;
+    border: 5px solid white;
+    border-radius: 20px;
+    justify-content: space-between;
+    width:250px;
+    height: 200px;
+}
+
+.roomsummary {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    height: 40%;
+    justify-content: space-between;
+    gap: 6px;
+    padding: 8px;
+    padding-left: 10px;
+}
+.popbox {
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    justify-content:center;
+    width: 31.666%;
+    padding: 20px 40px;
+    
+}
+.popheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fa-chart-line{
+    font-size: 25px;
+}
+.poprooms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+.popind {
+    display: flex;
+    flex-direction: row;
+    border: 5px solid white;
+    border-radius: 20px;
+    justify-content: flex-end;
+    row-gap: 30px;
+    width: 350px;
+    height: 150px;
+}
+.roomsummary2 {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 60%;
+    justify-content: space-around;
+    padding: 0px 20px;
+}
+
+.roomimage{
+    height:60%;
+    border-radius: 20px;
+}
+
+div.roomimage img {
+    
+width: 100%;
+height: auto;
+object-fit: cover;
+}
+
+.name {
+    font-weight: 700;
+
+}
+
+.price {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.rating{
+    font-size: 12px;
+    color: #0065FC;
+}
+
+
+.activities {
+    display: flex;
+    flex-flow: column wrap;
+    max-height: 500px;
+    row-gap: 20px;
+    gap:20px;
+}
+
+.indact {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-radius: 20px;                                                            /*not working*/
+    max-width: 25%;
+    height: 250px;
+}
+.imageact {
+    min-height: 75%;
+}
+.nameact {
+    min-height:  25px;
+    max-height: 25%;
+}
+
+footer{
+    width: 100%;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 60px;
+    padding: 30px;
+}
+
+.footsection{
+width: 30%;
+
+}
+
+.foothead{
+    font-weight:700;
+    gap: 15px;
+}
+
+.footlink{
+    font-size:  14px;
+    padding: 10px 0px;
+    
+}
+
+div.footlink:hover{
+    text-decoration: none;
+    font-weight: 700;
+}

@@ -22,7 +22,16 @@
     <h1>Find a place for your dream vacation</h1>
     <h3>Downtown or in nature</h3>
 
-    <header class='filterbox'>
+    <div class='searchcontainer'>
+        
+        <div class='location'> <i class="fas fa-location-dot"></i>'</div>
+        <form>
+        <input type= 'text'>
+        <button type='searchbutton'>Search</div>
+        </form>
+    </div>
+
+    <nav class='filterbox'>
         <div>Filters</div>
         <div class='filters'>
             <div class='filtericon'><i class="fas fa-money-bill-wave"></i></div>
@@ -40,7 +49,7 @@
             <div class='filtericon'><i class="fas fa-dog"></i></div>
             <div class='filtername'>Pets allowed</div>
         </div>
-    </header>
+    </nav>
 
 
 
@@ -57,7 +66,7 @@
                 <nav class='allrooms'>
                     <!--container having the individual rooms-->
 
-                    <div class='cards'>
+                    <a class='cards' href='#'>
                         <!--individual room container that will contain image and summary-->
                         <div class='roomimage'> <img src="images\images\hebergements\2_large\marcus-loke-WQJvWU_HZFo-unsplash.jpg"></div>
                         <div class='roomsummary'>
@@ -71,8 +80,9 @@
                                 <i class="far fa-star"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class='cards'>
+                    </a>
+                    
+                    <a class='cards' href='#'>
                         <div class='roomimage'> <img src="images\images\hebergements\2_large\fred-kleber-gTbaxaVLvsg-unsplash.jpg"></div>
                         <div class='roomsummary'>
                             <div class='name'>Hôtel du port</div>
@@ -85,8 +95,8 @@
                                 <i class="fas fa-star"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class='cards'>
+                    </a>
+                    <a class='cards' href='#'>
                         <div class='roomimage'> <img src="images\images\hebergements\2_large\reisetopia-B8WIgxA_PFU-unsplash.jpg"></div>
                         <div class='roomsummary'>
                             <div class='name'>Les mouettes Hotel</div>
@@ -99,8 +109,8 @@
                                 <i class="far fa-star"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class='cards'>
+                    </a>
+                    <a class='cards' href='#'>
                         <div class='roomimage'> <img src="images\images\hebergements\2_large\annie-spratt-Eg1qcIitAuA-unsplash.jpg"></div>
                         <div class='roomsummary'>
                             <div class='name'>Hôtel de la mer</div>
@@ -113,8 +123,8 @@
                                 <i class="far fa-star"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class='cards'>
+                    </a>
+                    <a class='cards' href='#'>
                         <div class='roomimage'> <img src="images\images\hebergements\2_large\nicate-lee-kT-ZyaiwBe0-unsplash.jpg"></div>
                         <div class='roomsummary'>
                             <div class='name'>Auberge Le panier</div>
@@ -127,8 +137,8 @@
                                 <i class="far fa-star"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class='cards'>
+                    </a>
+                    <a class='cards' href='#'>
                         <div class='roomimage'> <img src="images\images\hebergements\2_large\febrian-zakaria-M6S1WvfW68A-unsplash.jpg"></div>
                         <div class='roomsummary'>
                             <div class='name'>Hôtel chez Amina</div>
@@ -141,7 +151,7 @@
                                 <i class="fas fa-star"></i>
                             </div>
                         </div>
-                    </div>
+                    </a>
                     <header>
                         <h2>Showmore</h2>
                     </header>
@@ -158,7 +168,7 @@
                 </header>
                 <nav class='poprooms'>
                     <!--container for organizing the popular rooms-->
-                    <div class='popind'>
+                    <a class='popind' href='#'>
                         <!--individual popular room container-->
                         <div class='poproomimage'> <img src="images\images\hebergements\2_large\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"></div>
                         <div class='roomsummary2'>
@@ -172,8 +182,8 @@
                                 <i class="fas fa-star"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class='popind'>
+                    </a>
+                    <a class='popind' href='#'>
                         <div class='poproomimage'> <img src="images\images\hebergements\2_large\aw-creative-VGs8z60yT2c-unsplash.jpg"></div>
                         <div class='roomsummary2'>
                             <div class='name'>Au cœur de l'eau Bed and Breakfast</div>
@@ -186,8 +196,8 @@
                                 <i class="far fa-star"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class='popind'>
+                    </a>
+                    <a class='popind' href='#'>
                         <div class='poproomimage'> <img src="images\images\hebergements\2_large\febrian-zakaria-sjvU0THccQA-unsplash.jpg"></div>
                         <div class='roomsummary2'>
                             <div class='name'>Tout bleu et Blanc Hotel</div>
@@ -200,15 +210,15 @@
                                 <i class="far fa-star"></i>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </nav>
             </section>
         </section>
         <section>
 
-            <header>
+            <section class='activitysection'>
                 <h1>Activities in Marseille</h1>
-            </header>
+         
 
             <section class='activities'>
                 <!--container for activities-->
@@ -252,24 +262,25 @@
 
 <footer>
     <div class='footsection'>
-        <header class='foothead'>About</header>
+        <div class='foothead'>About</div>
         <br>
         <div class='footlink'><a href='#'>Site Map</a></div>
         <div class='footlink'><a href='#'>General Terms and Conditions</a></div>
         <div class='footlink'><a href='#'>Data and Privacy</a></div>
     </div>
     <div class='footsection'>
-        <header class='foothead'>Our Accommodations</header>
+        <div class='foothead'>Our Accommodations</div>
         <br>
         <div class='footlink'><a href='#'>Quality Assesment</a></div>
         <div class='footlink'><a href='#'>You have a hotel?</a></div>
     </div>
     <div class='footsection'>
-        <header class='foothead'>Assistance</header>
+        <div class='foothead'>Assistance</div>
         <br>
         <div class='footlink'><a href='#'>Help Desk</a></div>
         <div class='footlink'><a href='#'>Contact Us</a></div>
     </div>
+</div>
 </footer>
 
 

@@ -38,11 +38,11 @@ h3 {font-size:  16px;
     flex-basis: 100px;
 
 }
-a{
+.items a{
     text-decoration: none;
     color: black;
 }
-a:hover {
+.items a:hover {
     color: blue;
     border-top:   2px solid blue;  
     padding-top: 30px;
@@ -162,7 +162,7 @@ a:hover {
     border-radius: 20px;
     justify-content: flex-end;
     row-gap: 30px;
-    width: 350px;
+    width: 342px;
     height: 150px;
 }
 .roomsummary2 {
@@ -176,14 +176,29 @@ a:hover {
 
 .roomimage{
     height:60%;
-    border-radius: 20px;
+    border-radius: 20px 20px 0px 0px;
 }
 
 div.roomimage img {
     
 width: 100%;
-height: auto;
+height: 120px;
 object-fit: cover;
+border-radius: inherit;
+object-position: center;
+}
+.poproomimage{
+    height:100%;
+    width: 126px;
+    border-radius:  20px 0px 0px 20px;
+}
+
+div.poproomimage img {
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+    border-radius: inherit;
+    object-position: auto;
 }
 
 .name {
@@ -204,26 +219,110 @@ object-fit: cover;
 
 .activities {
     display: flex;
-    flex-flow: column wrap;
-    max-height: 500px;
+    justify-content: space-between;
+    height: 445px;
     row-gap: 20px;
     gap:20px;
 }
 
-.indact {
+.activitybox {
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
+    justify-content: space-between;
     border-style: solid;
     border-radius: 20px;                                                            /*not working*/
-    max-width: 25%;
-    height: 250px;
+    width: 300px;
+    height: 445px;
 }
-.imageact {
-    min-height: 75%;
+.imageact{
+    border-radius: 20px 20px 0px 0px;
 }
+
+div.imageact img {
+    height: 390px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    object-position: auto;
+}
+.act1-1{
+    display: flex;
+    flex-direction: column;
+    width:300px;
+    height: 235px;
+    object-fit: cover;
+    border-radius:20px 20px 0px 0px;
+    object-position: auto;
+}
+
+.act1-2{
+    display: flex;
+    flex-direction: column;
+    width:300px;
+    height: 165px;
+    object-fit: cover;
+    border-radius:20px 20px 0px 0px;
+    object-position: auto;
+}
+
+.act2-1{
+    display: flex;
+    flex-direction: column;
+    width:300px;
+height: auto;
+object-fit: cover;
+border-radius: 20px 20px 0px 0px;
+object-position: auto;
+}
+
+.act2-2{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    object-position: auto;
+
+}
+
+.imageact1-1 img{
+height:auto;
+width: 100%;
+object-fit: cover;
+border-radius: inherit;
+object-position: auto;
+
+}
+.imageact1-2 img{
+    height:inherit;
+    width: 300px;
+    object-fit: cover;
+    border-radius: inherit;
+    object-position: auto;
+    
+    }
+
+    .imageact2-1 img{
+        height:inherit;
+        width: 300px;
+        object-fit: cover;
+        border-radius: inherit;
+        object-position: auto;
+        
+        }
+
+        .imageact2-2 img{
+            height:inherit;
+            width: 300px;
+            object-fit: cover;
+            border-radius: inherit;
+            object-position: auto;
+            
+            }
+
 .nameact {
-    min-height:  25px;
-    max-height: 25%;
+    height: 48px;
 }
 
 footer{
@@ -251,7 +350,12 @@ width: 30%;
     
 }
 
-div.footlink:hover{
+div.footlink a{
+    text-decoration: none;
+    color: black;
+}
+
+div.footlink a:hover{
     text-decoration: none;
     font-weight: 700;
 }

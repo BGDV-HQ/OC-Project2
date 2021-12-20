@@ -65,7 +65,7 @@ border: 1px solid #F2F2F2;
 
 
 .location{
-    font-size: 25px;
+    font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -285,7 +285,7 @@ div.poproomimage img {
     justify-content: space-between;
     align-content: space-between;
     width: 1340px;
-    height: 445px;
+    height: 444px;
     position: right;
     padding: 2px;
 }
@@ -353,7 +353,7 @@ object-position: center;
             }
 
 .nameact {
-    height: 54px;
+    height: 55px;
     font-size: 16px;
     font-weight: 700;
     padding: 16px 0px 0px 20px;

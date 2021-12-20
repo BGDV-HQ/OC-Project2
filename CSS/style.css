@@ -219,10 +219,13 @@ div.poproomimage img {
 
 .activities {
     display: flex;
+    flex-flow: column wrap;
     justify-content: space-between;
+    align-content: space-between;
+    width: 1340px;
     height: 445px;
-    row-gap: 20px;
-    gap:20px;
+    position: right;
+    padding: 2px;
 }
 
 .activitybox {
@@ -231,62 +234,21 @@ div.poproomimage img {
     justify-content: space-between;
     border-radius: 20px;                                                            /*not working*/
     width: 300px;
-    height: 445px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.imageact{
-    border-radius: 15px 15px 0px 0px;
-}
 
-div.imageact img {
-    height: 390px;
+
+.img-act1 img{
+        height: 390px;
     width: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
     object-position: auto;
 }
-.act1-1{
-    display: flex;
-    flex-direction: column;
-    width:300px;
-    height: 235px;
-    object-fit: cover;
-    border-radius:20px 20px 0px 0px;
-    object-position: center;
-}
 
-.act1-2{
-    display: flex;
-    flex-direction: column;
-    width:300px;
-    height: 165px;
-    object-fit: cover;
-    border-radius:20px 20px 0px 0px;
-    object-position: auto;
-}
 
-.act2-1{
-    display: flex;
-    flex-direction: column;
-    width:300px;
-height: auto;
-object-fit: cover;
-border-radius: 20px 20px 0px 0px;
-object-position: auto;
-}
 
-.act2-2{
-    display: flex;
-    flex-direction: column;
-    width:100%;
-    height: 50%;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
-    object-position: auto;
-
-}
-
-.imageact1-1 img{
+.img-act2 img{
 height:180px;
 width:100%;
 object-fit: cover;
@@ -294,27 +256,34 @@ border-radius:  20px 20px 0px 0px;
 object-position: center;
 
 }
-.imageact1-2 img{
+.img-act3 img{
     height:110px;
-    width: 300px;
+    width: 100%;
     object-fit: cover;
     border-radius:  20px 20px 0px 0px;
     object-position: auto;
     
     }
+    .img-act4 img{
+        height: 390px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    object-position: auto;
+}
 
-    .imageact2-1 img{
-        height:inherit;
-        width: 300px;
+    .img-act5 img{
+        height:140px;
+        width: 100%;
         object-fit: cover;
         border-radius:  20px 20px 0px 0px;
         object-position: auto;
         
         }
 
-        .imageact2-2 img{
-            height:inherit;
-            width: 300px;
+        .img-act6 img{
+            height:152px;
+            width: 100%;
             object-fit: cover;
             border-radius:  20px 20px 0px 0px;
             object-position: auto;
@@ -322,7 +291,10 @@ object-position: center;
             }
 
 .nameact {
-    height: 48px;
+    height: 54px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 16px 0px 0px 20px;
 }
 
 footer{
@@ -330,9 +302,9 @@ footer{
     background-color: #F2F2F2;
     display: flex;
     flex-flow: row wrap;
-    gap: 60px;
-    padding: 30px;
-    margin: 0px -50px;
+    gap: 55px;
+    padding: 45px 50px;
+    margin: 60px -50px;
 }
 
 .footsection{
@@ -341,12 +313,13 @@ width: 30%;
 }
 
 .foothead{
-    font-weight:700;
+    font-size: 18px;
+    font-weight:650;
     gap: 15px;
 }
 
 .footlink{
-    font-size:  14px;
+    font-size:  16px;
     padding: 10px 0px;
     
 }

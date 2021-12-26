@@ -285,12 +285,7 @@ div.poproomimage img {
     flex-flow: row wrap;
     justify-content: space-between;
     align-content: space-between;
-<<<<<<< HEAD
-    width: 1340px;
-    height: 444px;
-=======
     max-height: 444px;
->>>>>>> working
     padding: 0px 2px;
 }
 

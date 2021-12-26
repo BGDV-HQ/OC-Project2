@@ -4,6 +4,11 @@
 }
 
 body {
+    max-width: 1440px;
+    margin: auto;
+}
+
+main{
     max-width: 1340px;
     margin: auto;
 }
@@ -278,6 +283,7 @@ div.poproomimage img {
     margin-top:60px;
     width: 100%;
     height: 100%;
+    border: solid 2px ;
 }
 
 .activities {
@@ -285,7 +291,6 @@ div.poproomimage img {
     flex-flow: row wrap;
     justify-content: space-between;
     align-content: space-between;
-    max-height: 444px;
     padding: 0px 2px;
 }
 
@@ -358,9 +363,7 @@ object-position: center;
 }
 
 footer {
-    width: 1440px;
-   margin-left: -50px;
-   margin-top:60px;
+margin-top: 60px ;
     background-color: #F2F2F2;
     display: flex;
     flex-flow: row wrap;

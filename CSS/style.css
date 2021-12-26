@@ -290,8 +290,17 @@ div.poproomimage img {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    align-content: space-between;
     padding: 0px 2px;
+    row-gap: 50px;
+}
+
+.activity__box {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: space-between ;
+    max-height: 100%;
+    border: solid 2px pink;
 }
 
 .activity__card {

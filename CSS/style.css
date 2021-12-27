@@ -335,6 +335,7 @@ div.poproomimage img {
     align-items: space-between ;
     max-height: 100%;
     border: solid 2px pink;
+    width: 23%;
 }
 
 .activity__card {
@@ -342,7 +343,7 @@ div.poproomimage img {
     flex-direction:column;
     justify-content: space-between;
     border-radius: 20px;
-    width: 300px;
+    width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -530,8 +531,13 @@ margin-top: 60px ;
     
         .accom__marseille,.pop__section {
             width: 100%;
+            padding-bottom: 30px;
+            margin-bottom: 20px;
+            padding: 5%;
         }
-
+.popheader{
+    align-items: center;
+}
         .accom__marseille {
             background: none;
         }
@@ -542,7 +548,7 @@ margin-top: 60px ;
     }
     
     .cards, .pop__card {
-      width: 80%;
+      width: 100%;
     }
 
     .pop__section {
@@ -552,6 +558,21 @@ margin-top: 60px ;
     .cards {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     }
+
+
+    .activitysection {
+        display: flex;
+        Flex-direction: column;
+        width: 100%;
+        margin: auto;
+        padding: 0% 2.5%;
+    }
+.activity__box{
+
+    width: 95%;
+    margin: auto;
+}
+
 .footsection {
     width: 100%;
 }

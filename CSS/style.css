@@ -69,12 +69,13 @@ h3 {font-size:  16px;
 height: 50px;
 width: 242px;
 margin-top: 50px;
-position: relative;
 bottom: 50px;
 left: 0px;
 border: 1px solid #F2F2F2;
+position: relative;
+font-weight: 700;
+color: black;
 }
-
 
 .location{
     font-size: 18px;
@@ -85,26 +86,29 @@ border: 1px solid #F2F2F2;
     width: 51px;
     height: 50px;
     background-color:  #F2F2F2;
-    border-radius:20px 0px 0px 20px;
+    border-radius:15px 0px 0px 15px;
     z-index: 1;
 }
-button {
-    position: relative;
-    top: -48px;
-    left: -5px;
+#search__word {
     height: 50px;
     width: 93px;
     background-color:#0065FC;
     color: white;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 0px 15px 15px 0px;
     border: none;
     font-size: 18px;
     font-weight: 600;
+    position: relative;
+    top: -50px;
+    left: -5px;
 }
 
-button:active{
+#search__word:active{
     font-size: 20px;
     text-decoration: none;
+}
+#search__symbol{
+    display: none;
 }
 .filter__section{
     display: flex;
@@ -507,6 +511,27 @@ margin-top: 60px ;
     margin: auto;
 }
 
+#search__word{
+    display: none;
+}
+#search__symbol{
+    display: inline-block;
+    background-color: #0065FC;
+    border: none;
+    color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 15px;
+    position: relative;
+    top: -50px;
+    left: -20px;
+    
+}
+#search__symbol:active{
+    font-size: 20px;
+    text-decoration: none;
+}
+
 .filter__section{
     display: flex;
     flex-direction: column wrap;
@@ -545,6 +570,7 @@ margin-top: 60px ;
     .accom__wrap, .pop__wrap {
       flex-direction: column;
       align-items: center;
+      row-gap: 10px;
     }
     
     .cards, .pop__card {
@@ -559,7 +585,9 @@ margin-top: 60px ;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     }
 
-
+.activities {
+    row-gap: 10px;
+}
     .activitysection {
         display: flex;
         Flex-direction: column;
@@ -572,6 +600,10 @@ margin-top: 60px ;
     width: 95%;
     margin: auto;
 }
+.activity__box{
+    row-gap: 10px;
+}
+
 
 .footsection {
     width: 100%;

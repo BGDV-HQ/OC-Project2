@@ -26,31 +26,38 @@ h3 {font-size:  16px;
     font-weight:  400;
 }
 .top{
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-
+.top img{
+    width: 100px;
+    height:100%;
+    padding-top: 40px;
+}
 .toplinks{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
+    padding: 20px 10px 0px 0px;
+    gap: 20px;
 }
 
-.items{
-    text-align: center;
-    padding: 20%;
-    flex-basis: 100px;
-
+.link {
+    padding: 30px 20px;
+    font-size: 16px;
 }
-.items a{
+
+
+.toplinks a{
     text-decoration: none;
     color: black;
 }
-.items a:hover {
-    color: blue;
-    border-top:   2px solid blue;  
-    padding-top: 30px;
+.link:hover {
+    color: #0065FC;
+    border-top:   2px solid #0065FC; 
+    padding-top: 28px;
 }
 
 .searchcontainer {
@@ -99,22 +106,31 @@ button:active{
     font-size: 20px;
     text-decoration: none;
 }
-.filterbox{
+.filter__section{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-    width: 66%;
-    font-size: 18px;
+    justify-content: flex-start;
+    width: 100%;
     font-weight: 700;
     align-items: center;
+    row-gap: 20px;
 }
 
+.filter__box{
+    display: flex;
+    flex-flow: row wrap ;
+    width: 90%;
+}
 .filters{
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-right: 2% ;
 }
-
+.filter__section h2{
+    font-size: 18px;
+    margin-right: 2.5%;
+}
 
 .filtericon{
     display: flex;
@@ -136,8 +152,9 @@ button:active{
     border: 2px solid #dfdfdf;
     border-radius: 30px;
     padding:13px;
-    padding-left: 60px;
+    padding-left: 55px;
     padding-right: 20px;
+    font-size: 18px;
 }
 
 .accomodation__section{
@@ -148,11 +165,23 @@ button:active{
 
 }
 
+.accomodation__section h3{
+    font-weight: 700;
+    margin: 0px;
+}
+
+.accomodation__section p{
+    font-size: 14px;
+    margin: 0px;
+    font-weight: 400;
+}
+
+
 .accom__marseille {
     background-color: #F2F2F2;
-    width:65.66%;
+    width:65%;
     border-radius: 20px;
-    padding: 20px 40px;
+    padding: 1% 3%;
 }
 
 
@@ -170,7 +199,7 @@ button:active{
     border: 5px solid white;
     border-radius: 20px;
     justify-content: space-between;
-    width:250px;
+    width:31%;
     height: 200px;
     text-decoration: none;
     color: black;
@@ -185,18 +214,22 @@ button:active{
     display: flex;
     flex-direction: column;
     background: white;
-    height: 40%;
+    height: auto;
     justify-content: space-between;
     gap: 6px;
     padding: 8px;
     padding-left: 10px;
 }
+
+
+
+
 .pop__section {
     background-color: #F2F2F2;
     border-radius: 20px;
     justify-content:center;
-    width: 31.333%;
-    padding: 20px 40px;
+    width: 32%;
+    padding: 1% 3%;
     
 }
 .popheader{
@@ -220,11 +253,17 @@ button:active{
     border-radius: 20px;
     justify-content: space-between;
     row-gap: 30px;
-    width: 342px;
     height: 150px;
     text-decoration: none;
     color: black;
 }
+
+.pop__card img{
+    width: 40%;
+    border-radius: 15px 0px 0px 15px;
+    object-fit: cover;
+}
+
 .pop__card:hover{
     color: blue;
 }
@@ -237,20 +276,15 @@ button:active{
     justify-content: space-around;
     padding: 0px 20px;
 }
-
-.roomimage{
-    height:60%;
-    border-radius: 15px 15px 0px 0px;
+.cards img{
+    width: 100%;
+    height: 60%;
+    border-radius:15px 15px 0px 0px;
+    object-fit: cover;
 }
 
-div.roomimage img {
-    
-width: 100%;
-height: 100%;
-object-fit: cover;
-border-radius: inherit;
-object-position: center;
-}
+
+
 .poproomimage{
     height:100%;
     width: 132px;
@@ -376,33 +410,34 @@ margin-top: 60px ;
     background-color: #F2F2F2;
     display: flex;
     flex-flow: row wrap;
-    gap: 52px;
+    gap: 40px;
     padding: 45px 50px;
 }
 
 .footsection{
-width: 30%;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+
 
 }
 
-.foothead{
+.footsection h3{
     font-size: 18px;
     font-weight:700;
-    gap: 15px;
+    margin-top: 0px;
 }
 
-.footlink{
+.footsection a{
     font-size:  16px;
-    padding: 10px 0px;
+    margin-bottom: 11px;
+    text-decoration: none;
+    color: black;
     
 }
 
-div.footlink a{
-    text-decoration: none;
-    color: black;
-}
 
-div.footlink a:hover{
+.footsection a:hover{
     text-decoration: none;
     font-weight: 700;
 }
@@ -422,19 +457,85 @@ div.footlink a:hover{
       flex-direction: row;
       justify-content: space-between;
     }
-  }
+}
   
   /* mobile phone */
-  @media screen and (max-width: 768px) {
-    .accomodation__section {
-      background-color: green;
-      flex-direction: column-reverse;
-    }
+@media screen and (max-width: 768px) {
+
+        .top {
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 0px;
+            margin-bottom: 40px;
+        }
+
+
+        .toplinks  {
+            display: flex;
+            Flex-direction: row;
+            width: 100%;
+            justify-content: center;
+           padding: 0px 0px 15px 0px;
+           margin-top: 30px;
+           gap: 0px;
+        }
+
+        .link{
+            width: 50%;
+            margin: 0px;
+            padding: 0px 0px 15px 0px;
+            border-bottom: 3px solid #F2F2F2;
+            text-align: center;
+        }
+
+
+        .link:hover {
+            color: #0065FC;
+            border-top: none;
+            padding-top: 0px;
+            border-bottom:   3px solid #0065FC;
+        }
+
+
+.search__section{
+        width: 90%;
     
-    .accom__marseille,.pop__section {
-      width: 100%;
-    }
+    margin: auto;
+}
+
+.filter__section{
+    display: flex;
+    flex-direction: column wrap;
+}
+.filter__section h2{
+    width: 100%;
+    margin-bottom:0px;
+}
+.filter__box{
+    width: 100%;
     
+    row-gap: 15px;
+}
+.filtername{
+
+    font-size: 16px;
+}
+
+        .accomodation__section {
+            flex-direction: column-reverse;
+        }
+    
+        .accom__marseille,.pop__section {
+            width: 100%;
+        }
+
+        .accom__marseille {
+            background: none;
+        }
+
     .accom__wrap, .pop__wrap {
       flex-direction: column;
       align-items: center;
@@ -443,4 +544,16 @@ div.footlink a:hover{
     .cards, .pop__card {
       width: 80%;
     }
+
+    .pop__section {
+        border-radius: 0px;
+    }
+
+    .cards {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+.footsection {
+    width: 100%;
+}
+
   }

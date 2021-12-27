@@ -14,14 +14,14 @@
 <body>
     <main>
     <header class='top'>
-        <div id='logo'>
-            <img src="images/images/logo/Booki.png" alt='Booki'>
-        </div>
+        <img src="images/images/logo/Booki.png" alt='Booki'>
         <div class='toplinks'>
-            <div class='items'><a href='#'>Accomodations</a></div>
-            <div class='items'><a href='#'>Activities</a></div>
+       <a class='link' href='#'>Accomodations</a>
+       <a class='link' href='#'>Activities</a>
         </div>
     </header>
+
+    <section class='search__section'>
     <h2>Find a place for your dream vacation</h2>
     <h3>Downtown or in nature</h3>
 
@@ -34,16 +34,17 @@
         </form>
     </div>
 
-    <nav class='filterbox'>
-        <div>Filters</div>
-        <div class='filters'>
-            <div class='filtericon'><i class="fas fa-money-bill-wave"></i></div>
-            <div class='filtername'>Low cost</div>
-        </div>
-        <div class='filters'>
-            <div class='filtericon'><i class="fas fa-child"></i></div>
-            <div class='filtername'>Family-friendly</div>
-        </div>
+    <nav class='filter__section'>
+        <h2>Filters</h2>
+        <div class='filter__box'>
+          <div class='filters'>
+              <div class='filtericon'><i class="fas fa-money-bill-wave"></i></div>
+                <div class='filtername'>Low cost</div>
+         </div>
+           <div class='filters'>
+               <div class='filtericon'><i class="fas fa-child"></i></div>
+                <div class='filtername'>Family-friendly</div>
+            </div>
         <div class='filters'>
             <div class='filtericon'><i class="fas fa-heart"></i></div>
             <div class='filtername'>Romantic</div>
@@ -52,12 +53,10 @@
             <div class='filtericon'><i class="fas fa-dog"></i></div>
             <div class='filtername'>Pets allowed</div>
         </div>
+        </div>
     </nav>
-
-
-
-
         <h3>More than 500 accomodations are available in this city</h3>
+    </section>
         <section class='accomodation__section'>
             <!--container for both sections: all rooms and popular rooms-->
 
@@ -71,10 +70,10 @@
 
                     <a class='cards' href='#'>
                         <!--individual room container that will contain image and summary-->
-                        <div class='roomimage'> <img src="images/images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt='Auberge la Cannebière'></div>
+                        <img src="images/images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt='Auberge la Cannebière'>
                         <div class='roomsummary'>
-                            <div class='name'>Auberge la Cannebière</div>
-                            <div class='price'>Night starting at <strong>25€</strong></div>
+                            <h3>Auberge la Cannebière</h3>
+                            <p>Night starting at <strong>25€</strong></p>
                             <div class='rating'>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -86,9 +85,9 @@
                     </a>
                     
                     <a class='cards' href='#'>
-                        <div class='roomimage'> <img src="images/images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt='Hôtel du port'></div>
+                      <img src="images/images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt='Hôtel du port'>
                         <div class='roomsummary'>
-                            <div class='name'>Hôtel du port</div>
+                            <h3>Hôtel du port</h3>
                             <div class='price'>Night starting at <strong>52€</strong></div>
                             <div class='rating'>
                                 <i class="fas fa-star"></i>
@@ -100,9 +99,9 @@
                         </div>
                     </a>
                     <a class='cards' href='#'>
-                        <div class='roomimage'> <img src="images/images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt='Les mouettes Hotel'></div>
+                        <img src="images/images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt='Les mouettes Hotel'>
                         <div class='roomsummary'>
-                            <div class='name'>Les mouettes Hotel</div>
+                            <h3>Les mouettes Hotel</h3>
                             <div class='price'>Night starting at <strong>76€</strong></div>
                             <div class='rating'>
                                 <i class="fas fa-star"></i>
@@ -114,9 +113,9 @@
                         </div>
                     </a>
                     <a class='cards' href='#'>
-                        <div class='roomimage'> <img src="images/images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt='Hôtel de la mer'></div>
+                       <img src="images/images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt='Hôtel de la mer'>
                         <div class='roomsummary'>
-                            <div class='name'>Hôtel de la mer</div>
+                            <h3>Hôtel de la mer</h3>
                             <div class='price'>Night starting at <strong>46€</strong></div>
                             <div class='rating'>
                                 <i class="fas fa-star"></i>
@@ -128,9 +127,9 @@
                         </div>
                     </a>
                     <a class='cards' href='#'>
-                        <div class='roomimage'> <img src="images/images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt='Auberge Le panier'></div>
+                        <img src="images/images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt='Auberge Le panier'>
                         <div class='roomsummary'>
-                            <div class='name'>Auberge Le panier</div>
+                            <h3>Auberge Le panier</h3>
                             <div class='price'>Night starting at <strong>23€</strong></div>
                             <div class='rating'>
                                 <i class="fas fa-star"></i>
@@ -142,9 +141,9 @@
                         </div>
                     </a>
                     <a class='cards' href='#'>
-                        <div class='roomimage'> <img src="images/images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt='Hôtel chez Amina'></div>
+                        <img src="images/images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt='Hôtel chez Amina'>
                         <div class='roomsummary'>
-                            <div class='name'>Hôtel chez Amina</div>
+                            <h3>Hôtel chez Amina</h3>
                             <div class='price'>Night starting at <strong>96€</strong></div>
                             <div class='rating'>
                                 <i class="fas fa-star"></i>
@@ -162,19 +161,19 @@
             <section class='pop__section'>
                 <!--container for popular rooms including title and background-->
                 <header class='popheader'>
-                    <div>
+                    
                         <h2>Most popular</h2>
-                    </div>
+                    
                     <div><i class="fas fa-chart-line"></i></div>
                 </header>
                 <nav class='pop__wrap'>
                     <!--container for organizing the popular rooms-->
                     <a class='pop__card' href='#'>
                         <!--individual popular room container-->
-                        <div class='poproomimage'> <img src="images/images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt='Morning Sun Hotel'></div>
+                        <img src="images/images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt='Morning Sun Hotel'>
                         <div class='roomsummary2'>
-                            <div class='name'>Morning Sun Hotel</div>
-                            <div class='price'>Night starting at <strong>128€</strong></div>
+                            <h3>Morning Sun Hotel</h3>
+                            <p>Night starting at <strong>128€</strong></p>
                             <div class='rating'>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -185,9 +184,9 @@
                         </div>
                     </a>
                     <a class='pop__card' href='#'>
-                        <div class='poproomimage'> <img src="images/images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg" alt='Au cœur de leau Bed and Breakfast'></div>
+                        <img src="images/images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg" alt='Au cœur de leau Bed and Breakfast'>
                         <div class='roomsummary2'>
-                            <div class='name'>Au cœur de l'eau Bed and Breakfast</div>
+                            <h3>Au cœur de l'eau Bed and Breakfast</h3>
                             <div class='price'>Night starting at <strong>71€</strong></div>
                             <div class='rating'>
                                 <i class="fas fa-star"></i>
@@ -199,9 +198,9 @@
                         </div>
                     </a>
                     <a class='pop__card' href='#'>
-                        <div class='poproomimage'> <img src="images/images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt='Tout bleu et Blanc Hotel'></div>
+                        <img src="images/images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt='Tout bleu et Blanc Hotel'>
                         <div class='roomsummary2'>
-                            <div class='name'>Tout bleu et Blanc Hotel</div>
+                            <h3>Tout bleu et Blanc Hotel</h3>
                             <div class='price'>Night starting at <strong>68€</strong></div>
                             <div class='rating'>
                                 <i class="fas fa-star"></i>
@@ -268,20 +267,20 @@
 <section>
 <footer class='footer'>
     <div class='footsection'>
-        <div class='foothead'>About</div>
-        <div class='footlink'><a href='#'>Site Map</a></div>
-        <div class='footlink'><a href='#'>General Terms and Conditions</a></div>
-        <div class='footlink'><a href='#'>Data and Privacy</a></div>
+        <h3>About</h3>
+        <a href='#'>Site Map</a>
+        <a href='#'>General Terms and Conditions</a>
+        <a href='#'>Data and Privacy</a>
     </div>
     <div class='footsection'>
-        <div class='foothead'>Our Accommodations</div>
-        <div class='footlink'><a href='#'>Quality Assesment</a></div>
-        <div class='footlink'><a href='#'>You have a hotel?</a></div>
+        <h3>Our Accommodations</h3>
+        <a href='#'>Quality Assesment</a>
+        <a href='#'>You have a hotel?</a>
     </div>
     <div class='footsection'>
-        <div class='foothead'>Assistance</div>
-        <div class='footlink'><a href='#'>Help Desk</a></div>
-        <div class='footlink'><a href='#'>Contact Us</a></div>
+        <h3>Assistance</h3>
+        <a href='#'>Help Desk</a>
+        <a href='#'>Contact Us</a>
     </div>
 </footer>
 </section>

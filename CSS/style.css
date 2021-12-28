@@ -63,19 +63,10 @@ h3 {font-size:  16px;
 .searchcontainer {
     display: flex;
     flex-direction: row;
-    margin-bottom: -20px;
+    margin-bottom: 30px;
+    position: relative;
 }
-.searchcontainer input  {
-height: 50px;
-width: 242px;
-margin-top: 50px;
-bottom: 50px;
-left: 0px;
-border: 1px solid #F2F2F2;
-position: relative;
-font-weight: 700;
-color: black;
-}
+
 
 .location{
     font-size: 18px;
@@ -83,24 +74,43 @@ color: black;
     justify-content: center;
     align-items: center;
     color: black;
-    width: 51px;
+    width: 50px;
     height: 50px;
     background-color:  #F2F2F2;
     border-radius:15px 0px 0px 15px;
     z-index: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
 }
+.searchcontainer input  {
+    height: 50px;
+    width: 270px;
+
+    border: 1px solid #F2F2F2;
+    
+    font-weight: 700;
+    padding-left: 18px;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    }
+
+    .searchcontainer input:focus{
+        outline: none;
+    }
 #search__word {
     height: 50px;
-    width: 93px;
+    width: 94px;
     background-color:#0065FC;
     color: white;
     border-radius: 0px 15px 15px 0px;
     border: none;
     font-size: 18px;
     font-weight: 600;
-    position: relative;
-    top: -50px;
-    left: -5px;
+    position: absolute;
+    top: 0px;
+    left: 284px;
 }
 
 #search__word:active{
@@ -522,9 +532,9 @@ margin-top: 60px ;
     height: 50px;
     width: 50px;
     border-radius: 15px;
-    position: relative;
-    top: -50px;
-    left: -20px;
+    position: absolute;
+    top:0px;
+    left: 280px;
     
 }
 #search__symbol:active{

@@ -81,7 +81,6 @@ h4{
     position: relative;
 }
 
-
     .location{
         font-size: 18px;
         display: flex;
@@ -172,7 +171,6 @@ h4{
         border-color: #0065FC;
         border-left: none;
     }
-
 
     .filtericon{
         display: flex;
@@ -269,7 +267,7 @@ h4{
             display: flex;
             flex-direction: column;
             background: white;
-            height: auto;
+            height: 40%;
             justify-content: space-between;
             gap: 6px;
             padding: 8px;
@@ -329,8 +327,7 @@ h4{
                 height: 145px;
                 text-decoration: none;
                 color: black;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-                
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);               
             }
 
                 .pop__card img{
@@ -360,7 +357,6 @@ h4{
                     top: 50%;
                 }
 
-
      .activitysection {
          margin-top:60px;
         width: 100%;
@@ -374,9 +370,7 @@ h4{
             padding: 0px 2px;
             height: 445px;
         }
-                
-                
-                
+                 
             .activity__card {
                 display: flex;
                 flex-direction:column;
@@ -399,32 +393,28 @@ h4{
                 }
 
                 #activity1, #activity4{
-                    height: 445px;
                     object-fit: cover;
                     object-position: center;
                 }
-                 #activity2{
-                    height: 235px;
-                    object-fit: cover;
-                    object-position: center;
+                #activity1 img{
+                    height: 394px;
                 }
-                 #activity3{
-                    height: 165px;
-                    object-fit: cover;
-                    object-position: center;
+                #activity2 img{
+                    height: 184px;
                 }
-                 #activity5{
-                    height: 195px;
-                    object-fit: cover;
-                    object-position: center;
+                #activity3 img{
+                    height: 114px;
                 }
-                #activity6{
-                    height: 210px;
-                    object-fit: cover;
-                    object-position: center;
+                #activity4 img{
+                    height: 394px;
                 }
-                
-                
+                #activity5 img{
+                    height: 144px;
+                }
+                #activity6 img{
+                    height: 159px;
+                }
+              
                 .nameact {
                     height: 55px;
                     padding: 0px 0px 0px 20px;
@@ -434,7 +424,6 @@ h4{
                     font-weight: 700;
                 }
                 
-
 footer {
 margin-top: 60px ;
     background-color: #F2F2F2;
@@ -448,8 +437,6 @@ margin-top: 60px ;
     display: flex;
     flex-direction: column;
     width: 30%;
-
-
 }
 
 .footsection h3{
@@ -466,12 +453,28 @@ margin-top: 60px ;
     
 }
 
-
 .footsection a:hover{
     text-decoration: none;
     font-weight: 700;
 }
 
+
+@media screen and (min-width: 992px) and (max-width: 1150px){
+    .accom__marseille {
+        border-radius: 20px;
+        padding: 1.8% 2% 3.5% 2%;
+    }
+    .cards {
+        width: 32%;
+    }
+    .roomsummary h3{
+        font-size: 14px;
+    }
+    .roomsummary p{
+        font-size: 12px;
+    }
+
+}
 
 /* tablet */
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -497,6 +500,9 @@ margin-top: 60px ;
       gap: 2%;
     }
 
+    .pop__card {
+        width: 32%;
+    }
     
     .activities {
         display: flex;
@@ -507,22 +513,24 @@ margin-top: 60px ;
       height: 460px;
       column-gap: 2%;
     }
-     
+
+     #activity1 img,#activity2 img,#activity3 img,#activity4 img,#activity5 img,#activity6 img {
+        height: 152px;
+        width: 100%;
+     }
      #activity1, #activity2, #activity3, #activity4, #activity5, #activity6{
         display: flex;
         flex-direction:column;
         justify-content: space-between;
         border-radius: 20px;
          width: 30%;
-        height: 45%;
+        height: 207px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     }
     .footsection{
         display: flex;
         flex-direction: column;
         width: 28%;
-    
-    
     }
 }
   
@@ -538,7 +546,6 @@ margin-top: 60px ;
             padding: 0px;
             margin-bottom: 40px;
         }
-
 
         .toplinks  {
             display: flex;
@@ -558,7 +565,6 @@ margin-top: 60px ;
             text-align: center;
         }
 
-
         .link:hover {
             color: #0065FC;
             border-top: none;
@@ -568,19 +574,15 @@ margin-top: 60px ;
 
 
 .search__section{
-        width: 90%;
-    
+    width: 90%;  
     margin: auto;
 }
-.search__section h3{
-    
+.search__section h3{   
     margin-bottom: 35px;
 }
 
 .searchcontainer {
-
     margin-bottom: 20px;
-
 }
 
 
@@ -623,7 +625,7 @@ margin-top: 60px ;
     row-gap: 15px;
 }
 .filters{
-    margin-right: 17px;
+    margin-right: 12px;
 }
 
 .filter__box div:nth-child(1){
@@ -652,40 +654,43 @@ margin-top: 60px ;
     width: 100%
 }
 
-        .accomodation__section {
+ .accomodation__section {
             flex-direction: column-reverse;
+            margin-bottom: -10px;
         }
     
         .accom__marseille,.pop__section {
             width: 100%;
-            padding-bottom: 30px;
-            margin-bottom: 20px;
-            padding: 5%;
+            padding: 5% 5% 6% 5%;
         }
-.popheader{
-    align-items: center;
-}
         .accom__marseille {
             background: none;
         }
 
-    .accom__wrap, .pop__wrap {
-      flex-direction: column;
-      align-items: center;
-      row-gap: 10px;
-    }
-    
-    .cards, .pop__card {
-      width: 100%;
-    }
-
-    .pop__section {
-        border-radius: 0px;
-    }
-
-    .cards {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    }
+        .accom__marseille {
+            background: none;
+        }
+        .pop__section {
+            border-radius: 0px;
+        }
+        .popheader{
+            align-items: center;
+        }
+        .accom__wrap, .pop__wrap {
+           flex-direction: column;
+              align-items: center;
+        }
+        .accom__wrap{
+          padding-bottom: 5%;
+        }
+        .pop__wrap {
+          row-gap: 0px;
+        }
+        
+         .cards, .pop__card {
+           width: 100%;
+          margin-bottom: 12px;
+         }
 
     .activitysection {
         display: flex;
@@ -694,19 +699,24 @@ margin-top: 60px ;
         margin: auto;
         padding: 0% 5%;
     }
-  .activities {
-    row-gap: 24px;
-     height: 100%;
-}
-   #activity1, #activity2, #activity3, #activity4, #activity5, #activity6{
-         width: 100%;
-    margin: auto;
-     height: 190px;
-  }
-
-
-.footsection {
-    width: 100%;
-}
+         .activities {
+            height: 100%;   
+        }
+        #activity1, #activity2, #activity3, #activity4, #activity5, #activity6{
+             width: 100%;
+             margin: auto;
+             height: 190px;
+             margin-bottom: 24px;
+        }
+         #activity1 img,#activity2 img,#activity3 img,#activity4 img,#activity5 img,#activity6 img {
+            height: 134px;
+             width: 100%;
+        }
+        .footer{
+           margin-top: 26px;
+        }
+            .footsection {
+                 width: 100%;
+        }
 
   }

@@ -108,7 +108,10 @@ h4{
         top: 0px;
         left: 50px;
     }
-
+    .searchcontainer input::placeholder {
+        color: black;
+        opacity: 1;
+   }
     .searchcontainer input:focus{
         outline: none;
     }
@@ -369,7 +372,7 @@ h4{
             justify-content: space-between;
             align-content: space-between;
             padding: 0px 2px;
-            height: 445px;
+            height: 449px;
         }
                  
             .activity__card {

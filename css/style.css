@@ -153,6 +153,7 @@ h4{
     .filter__box{
         display: flex;
         flex-direction: row ;
+        row-gap: 20px;
     }
     .filters{
         display: flex;
